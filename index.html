@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login and Registration Form</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+  
+</head>
+<body>
+<div class="container">
+    <div id="loginForm">
+        <h2>Login</h2>
+        <div class="form-group">
+            <label for="loginEmail">Email:</label>
+            <input type="email" id="loginEmail" placeholder="Enter your email">
+            <div id="loginEmailError" class="error"></div>
+        </div>
+        <div class="form-group">
+            <label for="loginPassword">Password:</label>
+            <input type="password" id="loginPassword" placeholder="Enter your password">
+            <div id="loginPasswordError" class="error"></div>
+        </div>
+        <button onclick="validateLogin()">Login</button>
+        <p>Don't have an account? <a href="#" onclick="showRegisterForm()">Register</a></p>
+    </div>
+    <div id="registerForm">
+        <h2>Register</h2>
+        <div class="form-group">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" placeholder="Enter your first name">
+            <div id="firstNameError" class="error"></div>
+        </div>
+        <div class="form-group">
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" placeholder="Enter your last name">
+            <div id="lastNameError" class="error"></div>
+        </div>
+        <div class="form-group">
+            <label for="mobileNumber">Mobile Number:</label>
+            <input type="text" id="mobileNumber" placeholder="Enter your mobile number">
+            <div id="mobileNumberError" class="error"></div>
+        </div>
+        <div class="form-group">
+            <label for="registerEmail">Email:</label>
+            <input type="email" id="registerEmail" placeholder="Enter your email">
+            <div id="registerEmailError" class="error"></div>
+        </div>
+        <div class="form-group">
+            <label for="registerPassword">Password:</label>
+            <input type="password" id="registerPassword" placeholder="Enter your password">
+            <div id="registerPasswordError" class="error"></div>
+        </div>
+        <button onclick="validateRegister()">Register</button>
+        <p>Already have an account? <a href="#" onclick="showLoginForm()">Login</a></p>
+    </div>
+</div>
+
+</body>
+</html>

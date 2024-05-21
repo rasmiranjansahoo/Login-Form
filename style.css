@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(login\ photo.jpg);
+}
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.error {
+    color: red;
+    font-size: 14px;
+}
+#registerForm {
+    display: none;
+}
